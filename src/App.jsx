@@ -1,9 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Bcbmidi from './components/bcbmidi'
+import Home from './components/home'
+import Jeopardy from './components/jeopardy'
+import Links from './components/Links'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const myComps = [<Home />, <Bcbmidi />, <Jeopardy />];
   return (
     <div className="App">
       <div id='main'>
@@ -11,17 +15,13 @@ function App() {
           <img src="/logo-alpha.png" className="logo" alt="bSharpCb logo" />
         </a>
       <h1>Bradley Shaffer</h1>
-        <div id='my-links'>
-        <a href="https://github.com/bSharpCb" target="_blank">
-          <img src="/bcb-logo.png" className="logo bcb-links" alt="Github logo" />
-        </a>
-        <a href="https://jeopardy.gg" target="_blank">
-          <img src="/jgg-logo.png" className="logo bcb-links" alt="LinkedIn logo" />
-        </a>
-        <a href="https://www.linkedin.com/in/bradley-shaffer-9a8b5772/" target="_blank">
-          <img src="/li-logo.png" className="logo bcb-links" alt="LinkedIn logo" />
-        </a>
+      <Links />
+      <div className="btns">
+            <button  onClick={() => setCount(0)}>Home</button>
+            <button  onClick={() => setCount(1)}>B#Cb</button>
+            <button  onClick={() => setCount(2)}>Jeopardy.gg</button>
         </div>
+      {myComps[count]}
       </div>
 
     </div>
