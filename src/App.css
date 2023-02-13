@@ -23,20 +23,42 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.summary {
+  background-color: darkviolet;
+}
+
+.resume {
+  background-color: orchid;
+}
+
+.work-history {
+  text-align: left;
+}
+
+.wh-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.employer {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.wh-item {
+  background-color: rebeccapurple;
+  margin: 5rem auto;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+
+.the-role {
+  background-color: darkgoldenrod;
+  padding: 2rem;
+  font-size: 1rem;
 }
 
 
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

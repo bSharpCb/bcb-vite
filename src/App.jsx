@@ -4,10 +4,11 @@ import Bcbmidi from './components/bcbmidi'
 import Home from './components/home'
 import Jeopardy from './components/jeopardy'
 import Links from './components/Links'
+import Resume from './components/Resume'
 
 function App() {
-  const [count, setCount] = useState(0)
-  const myComps = [<Home />, <Bcbmidi />, <Jeopardy />];
+  const [count, setCount] = useState(1)
+  const myComps = [<Resume />, <Home />, <Bcbmidi />, <Jeopardy />];
   return (
     <div className="App">
       <div id='main'>
@@ -23,7 +24,6 @@ function App() {
         </div>
       {myComps[count]}
       </div>
-
     </div>
   )
 }
