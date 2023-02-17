@@ -10,13 +10,17 @@ function Resume() {
             Adtech professional with several years of experience in both client facing roles and engineering roles. Special focus in web development and related technologies. Areas of expertise include Adtech, JavaScript, API development, client relations, and communicating high context technical concepts.
             </div>
             <div className="skills">
-                <Collapsible label="Front-end Development" />
-                <Collapsible label="Back-end Development" />
-                <Collapsible label="Data Analysis" />
-                <Collapsible label="Browser Automation/Testing" />
-                <Collapsible label="Technical Documentation" />
-                <Collapsible label="Troubleshooting Integrations" />
-                <Collapsible label="Video & Audio Editing" />
+                <span className="skills-col-1">
+                    <Collapsible label="Front-end Development" tools={['Javascript','CSS','HTML','React','Vite','Angular']} />
+                    <Collapsible label="Back-end Development" tools={['Node','Express.js','Python','C#']} />
+                    <Collapsible label="Data Analysis" tools={['Pandas','Pyspark','SQL','Databricks','Sagemaker','Tableau','Grafana']} />
+                    <Collapsible label="Browser Automation/Testing" tools={['Puppeteer.js','Browserstack','Jest']} />
+                </span>
+                <span className="skills-col-2">
+                    <Collapsible label="Technical Documentation" tools={['Confluence','Swagger','Postman Collections']} />
+                    <Collapsible label="Troubleshooting Integrations" tools={['Postman','Devtools','Charles','Fiddler']} />
+                    <Collapsible label="Video & Audio Editing" tools={['Premiere','AfterEffects','Audition','Audacity','FL Studio']} />
+                </span>
             </div>
             <div className="work-history">
                 <div className="wh-item">

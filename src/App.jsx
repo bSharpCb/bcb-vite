@@ -6,6 +6,7 @@ import Jeopardy from './components/jeopardy'
 import Links from './components/Links'
 import Resume from './components/Resume'
 
+
 function App() {
   const [count, setCount] = useState(1)
   const myComps = [<Resume />, <Home />, <Bcbmidi />, <Jeopardy />];
@@ -18,9 +19,10 @@ function App() {
       <h1>Bradley Shaffer</h1>
       <Links />
       <div className="btns">
-            <button  onClick={() => setCount(0)}>Home</button>
-            <button  onClick={() => setCount(1)}>B#Cb</button>
-            <button  onClick={() => setCount(2)}>Jeopardy.gg</button>
+            <button  onClick={() => setCount(0)}>Resume</button>
+            <button  onClick={() => setCount(1)}>Home</button>
+            <button  onClick={() => setCount(2)}>B#Cb</button>
+            <button  onClick={() => setCount(3)}>Jeopardy.gg</button>
         </div>
       {myComps[count]}
       </div>

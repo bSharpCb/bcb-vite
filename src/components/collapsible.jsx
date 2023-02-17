@@ -1,19 +1,19 @@
 import { useState } from "react";
 
-const Collapsible = () => {
-    const [open, setOPen] = useState(true);
+const Collapsible = (props) => {
+    const [open, setOPen] = useState(false);
     const toggle = () => {
         setOPen(!open);
       };
       
       return (
         <div>
-          <button onClick={toggle}>toggle</button>
-          {open && (
-            <div className="toggle">
-              <h4>toggle</h4>
-            </div>
-          )}
+          <button onClick={toggle}>{props.label}</button>
+            {open && (<div className="toggle">
+              {props.tools.map(tool => {
+                return <span className="tools" key={tool}>{tool}</span>;
+              })}
+            </div>)}
         </div>
       );
   };
